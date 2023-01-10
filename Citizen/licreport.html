@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <title>Template</title>
+  <style>
+
+    *{
+      box-sizing: border-box;
+    }
+    .navbar{
+      background-color: rgb(87, 144, 144);
+      color: aliceblue;
+
+    }
+    .nav-link{
+    color: #111212;
+
+    }
+    .nav-tabs {
+    --bs-nav-tabs-border-width: 3px;
+    --bs-nav-tabs-border-color: #111212;
+    --bs-nav-tabs-border-radius: 0.375rem;
+    --bs-nav-tabs-link-active-color: #161717;
+    --bs-nav-tabs-link-active-bg: #fff;
+    --bs-nav-tabs-link-active-border-color: #0a0a0a #151516 #fff;
+    }
+   
+    .nav{
+      --bs-nav-link-color: #e2e7f0;
+      --bs-nav-link-hover-color: #e56220;
+    }
+    .navbar-toggler{
+      color: aliceblue;
+    }
+    #Info{
+      border-collapse: collapse;
+      width: 100%;
+    }
+    #Info tr:nth-child(odd) {
+      background-color: #dddddd;
+    }
+    #Info th{
+      background-color: rgb(117, 122, 122);
+    }
+
+    #Info tr,td,th{
+      border: 1px solid black;
+      padding: 10px;
+      height: 50px;
+    }
+    footer {
+      text-align: center;
+      background-color: rgb(87, 144, 144);
+      color: white;
+      display: block;
+      position:relative;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height:30px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+          <h3>Road Transport Dept</h3>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTog"
+                    aria-controls="navbarTog">
+                    <span class="navbar-toggler-icon"></span>
+           </button>
+          <div class="navbar-collapse collapse" id="navbarTog">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#home"><i style="margin: 10px;" class="fa-solid fa-house-user"></i>Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#logout"><i style="margin: 10px;" class="fa-solid fa-right-from-bracket"></i>Logout</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </header>
+    <br>
+    <h3>License Report</h3>
+    <br>
+    <form action="">
+        <label>From:
+          <input type="date" name="from" />
+        </label>
+        <label>To:
+            <input type="date" name="to" />
+          </label>
+          <br>
+          <div style="width: auto;margin:7px 0px 0px 150px;display: flex;" class="row">
+            <input style="width: 80px;" type="submit" value="Submit">
+          </div>
+        </form>
+    <br>
+    <div class="bg ">
+ 
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-active">
+              <a class="nav-link active" data-bs-toggle="tab" href="#approved"><b>Approved Applications</b></a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" data-bs-toggle="tab" href="#rejected"><b>Rejected Applications</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#pending"><b>Pending Applications</b></a>
+            </li>
+        </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div id="approved" class="tab-pane active"><br>
+      <br>
+      <div class="table-responsive">
+
+      <table class="table" id="Info">
+        <tr>
+            <th>S.No</th>
+            <th>NAME</th>
+            <th>LICENSE NUMBER</th>
+            <th>APPROVED DATE</th>
+            <th>CONTACT</th>
+            <th>ADDRESS</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+    </table>  
+  </div>
+  
+    </div>
+    <div id="rejected" class="tab-pane fade "><br>
+      <br>
+      <div class="table-responsive">
+
+        <table class="table" id="Info">
+          <tr>
+              <th>S.No</th>
+              <th>NAME</th>
+              <th>APPLICATION FORM</th>
+              <th>CONTACT</th>
+          </tr>
+          <tr>
+
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+      </table>  
+    </div>
+    </div>
+    <div id="pending" class="tab-pane fade"><br>
+      <br>
+      <div class="table-responsive">
+
+        <table class="table" id="Info">
+          <tr>
+            <th>S.No</th>
+            <th>NAME</th>
+            <th>APPLICATION FORM</th>
+            <th>CONTACT</th>
+        </tr>
+        <tr>
+
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>  
+    </div>
+    </div>
+    <br>
+  </div>
+</div>
+    
+
+    <footer class="fixed-bottom">
+        <p>Footer<br>
+    </footer>
+    
+</body>
+</html>
